@@ -35,9 +35,9 @@ def check_keys(model, pretrained_state_dict):
     used_pretrained_keys = model_keys & ckpt_keys
     unused_pretrained_keys = ckpt_keys - model_keys
     missing_keys = model_keys - ckpt_keys
-    print('Missing keys:{}'.format(len(missing_keys)))
-    print('Unused checkpoint keys:{}'.format(len(unused_pretrained_keys)))
-    print('Used keys:{}'.format(len(used_pretrained_keys)))
+    # print('Missing keys:{}'.format(len(missing_keys)))
+    # print('Unused checkpoint keys:{}'.format(len(unused_pretrained_keys)))
+    # print('Used keys:{}'.format(len(used_pretrained_keys)))
     assert len(used_pretrained_keys) > 0, 'load NONE from pretrained checkpoint'
     return True
 

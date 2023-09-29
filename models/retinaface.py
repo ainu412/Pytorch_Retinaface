@@ -4,10 +4,11 @@ import torchvision.models.detection.backbone_utils as backbone_utils
 import torchvision.models._utils as _utils
 import torch.nn.functional as F
 from collections import OrderedDict
-
-from models.net import MobileNetV1 as MobileNetV1
-from models.net import FPN as FPN
-from models.net import SSH as SSH
+import sys
+sys.path.append("..")
+from ..models.net import MobileNetV1 as MobileNetV1
+from ..models.net import FPN as FPN
+from ..models.net import SSH as SSH
 
 
 
